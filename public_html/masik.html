@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>TODO supply a title</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+	<main>
+	    <header></header>
+	    <nav>
+		<ul>
+		    <li><a href="index.html">Kezdőlap</a></li>
+		    <li><a href="masik.html">Másik</a></li>
+		</ul>
+
+	    </nav>
+	    <article>
+		<form action="feldolgoz.php" target="_blank" method="post">
+		    <fieldset>
+			<legend>Regisztráció</legend>
+			<label for="nev">Add meg a felhasználó neved:*</label>
+			<input type="text" name="nev" id="nev" required placeholder="pl.:Ruvaen Valvyre">
+			<br>
+
+			<label for="email">Add meg az email címed:*</label>
+			<input type="email" id="email" name="email" required placeholder="pl.:valami@valami.com">
+			<br>
+
+			<label for="jelszo">Add meg a jelszót:*</label>
+			<input type="password" name="jelszo" id="jelszo" required placeholder="jelszó">
+			<br>
+
+			<label for="jelszo">Add meg még egyszer a jelszót:*</label>
+			<input type="password" name="jelszo" id="jelszo" required placeholder="jelszó">
+			<br>
+		    </fieldset>
+		    <fieldset>
+			<legend>Karakter készítés</legend>
+			<p>A karaktered neme:</p>
+			<label for="male">férfi</label>
+			<input type="radio" id="male" name="gender" value="male">
+
+			<label for="female">nő</label>
+			<input type="radio" id="female" name="gender" value="female">
+
+			<label for="other">egyéb</label>
+			<input type="radio" id="other" name="gender" value="other">
+			<br>
+
+			<label for="vehicle1"> I have a bike</label>
+			<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+			<br>
+
+			<label for="vehicle2"> I have a car</label>
+			<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+			<br>
+
+			<label for="vehicle3"> I have a boat</label>
+			<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+			<br>
+
+			<label for="quantity">Quantity (between 1 and 5):</label>
+			<input type="number" id="quantity" name="quantity" min="1" max="5">
+
+		    </fieldset>
+		    <input type="submit" value="Küld">
+		</form>
+	    </article>
+	</main>
+    </body>
+</html>
