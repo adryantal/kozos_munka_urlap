@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+body {
+
+    background: url('hatter.png');
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+main {
+    max-width: 800px;
+    font-family: 'Walter Turncoat', cursive;
+    color: violet;
+    text-shadow: 1px 0.5px 0.5px rgba(0, 0, 0, 0.5);     
+    margin: auto;
+    font-size: 16px;
+    background: lightsteelblue;
+    border: 2px solid pink;
+    box-shadow: 1px 3px 5px plum;
+
+}
+
+header h1{
+    text-align: center;
+    filter: drop-shadow(2px 3px 3px rgb(160, 0, 210, 0.4));
+    text-shadow: 1px 1px 1px black;
+
+}
+
+nav{
+    border: 1px solid pink;
+    border-radius: 3px;
+    
+}
+
+ul{
+    padding: 0;
+}
+
+nav a, input[type=submit], input[type=reset] {
+    color: orchid;
+    font-weight: bold;
+    background: bisque;
+    padding: 5px;
+    border: 2px solid pink;
+    border-radius: 5px;  
+    filter: drop-shadow(3px 3px 2px rgb(160, 0, 210, 0.3));
+    transition: 0.5s all;
+    transition-property: background, color, border;
+
+}
+
+nav a:hover, input[type=submit]:hover, input[type=reset]:hover{
+    background: rgba(236, 217, 234);
+    border: 2px solid plum;
+    color: darkorchid;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 50%; 
+    justify-content: space-around;
+
+}
+
+
+
+header {
+    background: bisque;
+    border: 1px solid pink;
+    border-radius: 5px;
+    border: 2px solid plum;
+    box-shadow: 1px 3px 5px pink;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul{
+    height: 20px;
+
+}
+
+
+fieldset {
+    border-top: 1px solid pink;    
+    margin: 10px;
+    box-shadow: 1px 1px 2px plum;
+    border: 1px solid pink;
+    background: lightblue;
+    border-radius: 5px;
+
+}
+
+legend{
+    font-weight: 130%;
+    color: darkorchid;
+    font-size: 120%;
+    background: plum;
+    border: 1.5px solid pink;
+    box-shadow: 2px 2px 5px plum;
+    border-radius: 5px;
+    padding: 5px;
+    text-shadow: 1px 1px 0.5px black;
+}
+
+input[type=text], input[type=password], input[type=tel], input[type=radio], input[type=checkbox], input[type=number], input[type=month], textarea, select{
+    background: rgba(236, 217, 234);
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 75%;
+    filter: drop-shadow(1px 1px 1px rgb(160, 0, 210, 0.4));
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+input[type=submit], input[type=reset] {
+    font-family: 'Walter Turncoat', cursive;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+input[type=text]{
+   
+    
+}
+
+textarea {
+    width: 100%;
+    font-family: 'Walter Turncoat', cursive;
+}
+
+@media screen and (max-width: 700px){
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+    }
+
+    nav li {
+        display: flex;
+        flex-direction: row;       
+
+    }
+
+    nav li a{       
+        width: 100%;
+        text-align: center;
+
+    }
+
+
+
+
+
+}
+

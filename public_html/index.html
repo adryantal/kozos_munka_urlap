@@ -13,13 +13,109 @@ and open the template in the editor.
         <meta name="description" content="Forms">
         <meta name="keywords" content="HTML, CSS, Űrlap">
         <meta name="author" content="Antal Adrienn">
-        <link href="#" rel="stylesheet" type="text/css"/>
+        <link href="kozos_stilus.css" rel="stylesheet" type="text/css"/>
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap" rel="stylesheet">
     </head>
     <body>
 
         <main>
+            <header><h1>Űrlap</h1></header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="masik.html">Másik oldal</a></li>
 
-            
-        </main>
-    </body>
-</html>
+                </ul>
+
+
+            </nav>
+            <article>
+                <form action="feldolgoz.php" target="_blank" method="post" id="thisform">  
+                    <fieldset>
+                        <legend>Kezdőadatok</legend>
+                        <label for="nev">Add meg a neved: *</label>
+                        <input type="text" name="nev" id="nev" required placeholder="Vezetéknév Keresztnév"><br>
+                        <label for="varos">Lakhelyed (város): *</label>
+                        <input type="text" name="varos" id="varos" required placeholder="Budapest"><br>
+                        <label for="jelszo">Írj be egy jelszót: *</label>
+                        <input type="password" name="jelszo" id="jelszo" disabled ><br>      
+                        <label for="telefon">Add meg a telefonszámod: *</label>
+                        <input type="tel" name="telefon" id="telefon" required ><br> 
+                        <label for="datum">SZületési dátum: *</label>
+                          <input type="month" name="datum" id="datum"  min="1920-01" max="2002-02" required>
+                    </fieldset>
+
+
+                    <fieldset>
+                        <legend>Preferált zenei stílus</legend>
+                        Kérlek, válaszd ki kedvenc zenei stílusod:<br>
+                        <input type="radio" id="c" name="stilus" value="classic" checked="">
+                        <label for="c">Klasszikus</label><br>
+                        
+                        <input type="radio" id="p" name="stilus" value="pop">
+                        <label for="p">Pop</label><br>                        
+                        <input type="radio" id="r" name="stilus" value="rock">
+                        <label for="r">Rock</label><br>
+                        <input type="radio" id="m" name="stilus" value="metal">
+                        <label for="m">Metal</label><br>
+                        
+                        <input type="radio" id="j" name="stilus" value="jazz">
+                        <label for="j">Jazz</label><br>
+                        <input type="radio" id="f" name="stilus" value="folk">
+                        <label for="f">Folk</label><br>
+                        <input type="radio" id="b" name="stilus" value="blues">
+                        <label for="b">Blues</label>
+
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Kedvenc hangszered</legend>
+                        <label for="inst1">Jelöld be a kedvenc hangszered: </label><br>
+                        <input type="checkbox" id="inst1" name="inst1" value="piano">
+                        <label for="inst1">Zongora</label><br>
+                        <input type="checkbox" id="inst2" name="inst2" value="guitar">
+                        <label for="inst2">Gitár</label><br>
+                        <input type="checkbox" id="inst3" name="inst3" value="drums">
+                        <label for="inst3">Dob</label>                    
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Kor</legend>
+                        <label for="ev">Hány éves vagy?</label>
+                        <input type="number" id="ev" name="ev" min="10" max="100">
+                    </fieldset>
+
+
+                    <fieldset>
+                        <legend>Hangszer</legend>
+                        <label for="inst">Milyen hangszerrel rendelkezel?</label>
+                        <select name="inst" id="inst" form="thisform">
+                            <option value="nincs">Nincs hangszerem</option>
+                            <option value="piano">Zongora</option>
+                            <option value="guitar">Gitár</option>
+                            <option value="violin">Hegedű</option>
+                            <option value="drum">Dob</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Megjegyzés</legend>
+                        <label for="megj"><strong>Ide írhatsz kommentet:</strong></label>
+                        <br>
+                        <textarea name="megj" id="megj" placeholder="Komment" required></textarea>
+
+                    </fieldset>
+
+                    <input type="submit" value="Küldés">
+                    <input type="reset" value="Töröl">
+
+                </form>
+                </article>
+
+
+                    </main>
+                    </body>
+                    </html>
